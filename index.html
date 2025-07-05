@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Detection using cocoSsd Model</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="para" class="para">Model is being Loaded,Please Wait!!!</p>
+        <div id="button" class="buttondisplay">      
+           <button onclick="upload()" class="buttonstyl">Upload</button>
+           <button onclick="webcam()" class="buttonstyl" style="margin-left: 70px;margin-right: auto;">webcam</button></div>
+        <input id="file" type="file" style="display: none">
+        <div id="display" class="videodisplay">
+           <video id="preview" style="display: none"></video>
+           <video id="webcam" style="display: none" autoplay playsinline></video>
+        </div> 
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+        <script src="model.js"></script>
+        <script src="handler.js"></script>            
+    </body>
+</html>
