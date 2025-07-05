@@ -15,7 +15,7 @@ function upload()
                         return;
                     }
                     if(x.size>10*1024*1024){
-                        alert("Please upload files up to 5mb only");
+                        alert("Please upload files up to 10mb only");
                         return;}
               
                     reader.onload=function(e)

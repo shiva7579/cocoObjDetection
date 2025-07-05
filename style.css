@@ -1,4 +1,4 @@
-            .videostyl {width: 400;}
+            .videostyl {max-width: 400; max-height: 500;}
             .webcam {width:400; height:400}
             .videodisplay {display:block;position:relative;width: fit-content;margin-top:50px;margin-left:auto;margin-right: auto;}
             .canvasdisplay {position: absolute; top: 0px; left:0px;pointer-events: none;}
