@@ -14,8 +14,8 @@ function upload()
                         alert("Please Upload video Only!!!");
                         return;
                     }
-                    if(x.size>10*1024*1024){
-                        alert("Please upload files up to 10mb only");
+                    if(x.size>50*1024*1024){
+                        alert("Please upload files up to 50mb only");
                         return;}
               
                     reader.onload=function(e)
@@ -70,9 +70,9 @@ function upload()
                 cam.style.display = "none"; // hide video
                 canvas.style.display = "none";
                 currentvideo = null;
-                alert("Webcam turned off after 30 seconds.");
+                alert("Webcam turned off after 1 minutes.");
                 document.querySelectorAll("#button button").forEach(function(b){b.disabled=false;});
-                 }, 30 * 1000);
+                 }, 60 * 1000);
             
             } 
             catch (err) {
